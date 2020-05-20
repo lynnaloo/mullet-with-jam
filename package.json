@@ -1,7 +1,7 @@
 {
-  "name": "mullet",
-  "version": "0.0.23",
-  "description": "Mullet Stack: Facebook in the front. Walmart in the back. (React.js/Hapi)",
+  "name": "mullet-with-jam",
+  "version": "0.0.1",
+  "description": "Mullet Stack: Facebook in the front. Assisted by Azure Functions API",
   "main": "walmart.js",
   "watch": {
     "test": "{src,test}/*.js"
@@ -15,20 +15,18 @@
     "format": "prettier --single-quote --write *.js src/components/*.js test/*.js",
     "postinstall": "mkdir -p public/js && cp node_modules/bootstrap/dist/js/bootstrap.min.js node_modules/jquery/dist/jquery.min.* public/js && cp node_modules/bootstrap/dist/css/bootstrap*.min.css public/css && npm run webpack"
   },
-  "engines": {
-    "node": "8.12"
-  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/lynnaloo/mullet.git"
+    "url": "https://github.com/lynnaloo/mullet-with-jam.git"
   },
   "keywords": [
     "react",
     "hapi",
     "node",
     "Facebook",
-    "Walmart",
-    "mullet"
+    "mullet",
+    "jamstack",
+    "static"
   ],
   "author": "Linda Nichols",
   "license": "MIT",
