@@ -21,6 +21,7 @@ Install [Node.js](http://nodejs.org/)
 git clone https://github.com/lynnaloo/mullet-with-jam.git
 cd mullet-with-jam
 npm install
+npm run build
 ```
 
 ## Contributors

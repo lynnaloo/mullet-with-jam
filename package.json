@@ -10,8 +10,7 @@
     "webpack": "webpack",
     "lint": "eslint . --ext .js",
     "format": "prettier --single-quote --write *.js src/components/*.js test/*.js",
-    "build": "mkdir -p public/js && cp node_modules/bootstrap/dist/js/bootstrap.min.js node_modules/jquery/dist/jquery.min.* public/js && cp node_modules/bootstrap/dist/css/bootstrap*.min.css public/css && npm run webpack",
-    "postinstall": "npm run build"
+    "build": "mkdir -p public/js && cp node_modules/bootstrap/dist/js/bootstrap.min.js node_modules/jquery/dist/jquery.min.* public/js && cp node_modules/bootstrap/dist/css/bootstrap*.min.css public/css && npm run webpack"
   },
   "repository": {
     "type": "git",
