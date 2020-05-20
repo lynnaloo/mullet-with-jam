@@ -7,10 +7,9 @@
     "test": "{src,test}/*.js"
   },
   "scripts": {
-    "webpack": "webpack",
     "lint": "eslint . --ext .js",
     "format": "prettier --single-quote --write *.js src/components/*.js test/*.js",
-    "build": "mkdir -p public/js && cp node_modules/bootstrap/dist/js/bootstrap.min.js node_modules/jquery/dist/jquery.min.* public/js && cp node_modules/bootstrap/dist/css/bootstrap*.min.css public/css && npm run webpack"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -37,9 +36,7 @@
     "babel-preset-es2015": "6.3.13",
     "babel-preset-react": "6.3.13",
     "body-parser": "1.19.0",
-    "bootstrap": "4.5.0",
     "jest": "21.0.0",
-    "jquery": "3.5.1",
     "npm-watch": "0.2.0",
     "prop-types": "15.6.2",
     "react": "16.10.1",
@@ -48,9 +45,6 @@
     "webpack": "3.0.0"
   },
   "devDependencies": {
-    "code": "5.0.0",
-    "enzyme": "3.7.0",
-    "enzyme-adapter-react-16": "1.6.0",
     "eslint": "6.3.0",
     "eslint-config-eta": "1.0.0",
     "eslint-plugin-babel": "4.1.1",
@@ -58,6 +52,7 @@
     "jest-cli": "21.0.0",
     "prettier": "2.0.4",
     "react-addons-test-utils": "15.6.2",
-    "react-test-renderer": "16.5.2"
+    "react-test-renderer": "16.5.2",
+    "nodemon": "*"
   }
 }
