@@ -8,32 +8,30 @@
 
 All sitting on top of [Node.js](http://nodejs.org/).
 
-[![NPM version](https://badge.fury.io/js/mullet.svg)](http://badge.fury.io/js/mullet) [![Greenkeeper badge](https://badges.greenkeeper.io/lynnaloo/mullet.svg)](https://greenkeeper.io/) [![Build Status](https://dev.azure.com/linicho/Mullet/_apis/build/status/lynnaloo.mullet?branchName=master)](https://dev.azure.com/linicho/Mullet/_build/latest?definitionId=1&branchName=master)
+[![NPM version](https://badge.fury.io/js/mullet.svg)](http://badge.fury.io/js/mullet) [![Greenkeeper badge](https://badges.greenkeeper.io/lynnaloo/mullet.svg)](https://greenkeeper.io/) [![Build Status](https://dev.azure.com/lynnaloo/Mullet/_apis/build/status/lynnaloo.mullet?branchName=master)]([![Build Status](https://dev.azure.com/lynnaloo/Mullet/_apis/build/status/lynnaloo.mullet?branchName=master)](https://dev.azure.com/lynnaloo/Mullet/_build/latest?definitionId=18&branchName=master)
 
 ## Get the Party Started
 
 Install [Node.js](http://nodejs.org/)
-
-Install [Yarn](https://yarnpkg.com/lang/en/docs/install/)
 
 ### Setup the Mullet stack for development:
 
 ```
 git clone https://github.com/lynnaloo/mullet
 cd mullet
-yarn install
+npm install
 ```
 
 Start the Mullet Server:
 
 ```
-yarn start
+npm start
 ```
 
 Watch the client folders for changes during development:
 
 ````
-yarn watch
+npm watch
 ```
 
 #### OR
@@ -41,13 +39,13 @@ yarn watch
 ### Install the Mullet module:
 
 ```
-yarn add mullet
+npm add mullet
 ```
 
 Start the Mullet Server:
 
 ```
-yarn start mullet
+npm start mullet
 ```
 
 ## Party On!
