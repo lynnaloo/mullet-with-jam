@@ -24,6 +24,11 @@ npm install
 npm run build
 ```
 
+### Deploy to Azure Static Web App
+
+* Remove the `azure-static-webb-apps-****.yml` file because one will be generated for you
+* [Create a static web app](https://docs.microsoft.com/en-us/azure/static-web-apps/getting-started?tabs=angular#create-a-static-web-app)
+
 ## Contributors
 
 Mullet Stack was created on a Thursday night by [Linda Nichols](http://www.github.com/lynnaloo). Name inspiration by [Ryan Brunsvold](http://www.github.com/brunsvold) who probably wishes to not be credited on something called "The Mullet Stack."
