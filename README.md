@@ -27,7 +27,9 @@ npm run build
 ### Deploy to Azure Static Web App
 
 * Remove the `azure-static-webb-apps-****.yml` file because one will be generated for you
-* [Create a static web app](https://docs.microsoft.com/en-us/azure/static-web-apps/getting-started?tabs=angular#create-a-static-web-app)
+* [Create a static web app in the Azure portal](https://docs.microsoft.com/en-us/azure/static-web-apps/getting-started?tabs=angular#create-a-static-web-app)
+* Get the latest code from `master` and you'll have your very own workflow file for deployment
+* Push some code!
 
 ## Contributors
 

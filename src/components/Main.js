@@ -5,7 +5,7 @@ import Facebook from './Facebook';
 ReactDOM.render(
   <Facebook
     title="Welcome to the Mullet Stack."
-    subtitle="Facebook in the front. Walmart in the back."
+    subtitle="Facebook in the front. Minus the Walmart. Now running on Azure Static Web Apps."
   />,
   document.getElementById('facebook')
 );
