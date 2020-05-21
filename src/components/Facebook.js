@@ -57,7 +57,7 @@ export default class Facebook extends Component {
   }
 
   componentDidMount() {
-    fetch("/greeting")
+    fetch("/api/greeting")
       .then(res => res.text())
       .then(
         (body) => {

@@ -27,7 +27,7 @@ const init = async () => {
 
     server.route({
       method: 'GET',
-      path: '/greeting',
+      path: '/api/greeting',
       handler: (request, h) => {
         return 'Hi World!';
       }
