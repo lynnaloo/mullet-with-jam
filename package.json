@@ -8,8 +8,10 @@
   "scripts": {
     "lint": "eslint . --ext .js",
     "format": "prettier --single-quote --write *.js src/components/*.js test/*.js",
-    "build": "webpack"
+    "build": "webpack",
+    "start": "node walmart.js"
   },
+  "main": "walmart.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/lynnaloo/mullet-with-jam.git"
@@ -28,6 +30,8 @@
   },
   "homepage": "http://www.mullet.run",
   "dependencies": {
+    "@hapi/hapi": "^19.1.1",
+    "@hapi/inert": "^6.0.1",
     "babel": "6.23.0",
     "babel-core": "6.4.0",
     "babel-jest": "21.0.0",

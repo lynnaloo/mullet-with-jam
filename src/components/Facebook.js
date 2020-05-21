@@ -32,7 +32,7 @@ export default class Facebook extends Component {
     this.state = {
       error: null,
       isLoaded: false,
-      item: 'Hello! '
+      item: ''
     };
   }
 
@@ -46,7 +46,7 @@ export default class Facebook extends Component {
             width="200"
             alt="Mullet"
           />
-          <p style={Styles.title}>{item} {this.props.title}</p>
+          <p style={Styles.title}>{this.state.item} {this.props.title}</p>
           <p style={Styles.subtitle}>{this.props.subtitle}</p>
           <p style={Styles.subtitle}>
             Created by <a href="http://github.com/lynnaloo/">@lynnaloo</a>
@@ -58,18 +58,17 @@ export default class Facebook extends Component {
 
   componentDidMount() {
     fetch("/greeting")
-      .then(res => res.json())
+      .then(res => res.text())
       .then(
-        (result) => {
+        (body) => {
+          console.log("debug", body);
           this.setState({
             isLoaded: true,
-            item: result.item
+            item: body
           });
         },
-        // Note: it's important to handle errors here
-        // instead of a catch() block so that we don't swallow
-        // exceptions from actual bugs in components.
         (error) => {
+          console.log("uh oh, there was an error");
           this.setState({
             isLoaded: true,
             error

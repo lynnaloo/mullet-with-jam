@@ -13,7 +13,7 @@ Static [Facebook](http://facebook.github.io/react/) in the front. Backed by Azur
 
 ## Get the Party Started
 
-Install [Node.js](http://nodejs.org/)
+Install [Node.js LTS](http://nodejs.org/)
 
 ### Setup Mullet & Jam for development:
 
