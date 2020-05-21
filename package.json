@@ -2,7 +2,6 @@
   "name": "mullet-with-jam",
   "version": "0.0.1",
   "description": "Mullet Stack: Facebook in the front. Assisted by Azure Functions API",
-  "main": "walmart.js",
   "watch": {
     "test": "{src,test}/*.js"
   },
@@ -25,9 +24,9 @@
   "author": "Linda Nichols",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lynnaloo/mullet/issues"
+    "url": "https://github.com/lynnaloo/mullet-with-jam/issues"
   },
-  "homepage": "http://www.mullet.io",
+  "homepage": "http://www.mullet.run",
   "dependencies": {
     "babel": "6.23.0",
     "babel-core": "6.4.0",
