@@ -29,6 +29,11 @@ const Styles = {
 export default class Facebook extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      error: null,
+      isLoaded: false,
+      item: 'Hello! '
+    };
   }
 
   render() {
@@ -41,7 +46,7 @@ export default class Facebook extends Component {
             width="200"
             alt="Mullet"
           />
-          <p style={Styles.title}>{this.props.title}</p>
+          <p style={Styles.title}>{item} {this.props.title}</p>
           <p style={Styles.subtitle}>{this.props.subtitle}</p>
           <p style={Styles.subtitle}>
             Created by <a href="http://github.com/lynnaloo/">@lynnaloo</a>
@@ -49,6 +54,28 @@ export default class Facebook extends Component {
         </header>
       </div>
     );
+  }
+
+  componentDidMount() {
+    fetch("/greeting")
+      .then(res => res.json())
+      .then(
+        (result) => {
+          this.setState({
+            isLoaded: true,
+            item: result.item
+          });
+        },
+        // Note: it's important to handle errors here
+        // instead of a catch() block so that we don't swallow
+        // exceptions from actual bugs in components.
+        (error) => {
+          this.setState({
+            isLoaded: true,
+            error
+          });
+        }
+      )
   }
 }
 
