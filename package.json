@@ -45,7 +45,8 @@
     "react": "16.10.1",
     "react-dom": "16.10.1",
     "react-scripts": "3.1.2",
-    "webpack": "4.0.0"
+    "webpack": "4.0.0",
+    "webpack-cli": "^3.3.11"
   },
   "devDependencies": {
     "eslint": "6.3.0",
